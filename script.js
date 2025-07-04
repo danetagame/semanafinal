@@ -4,8 +4,8 @@ function loadCss(filename) {
     
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = `css/${filename}`; 
-    link.setAttribute('data-example-css', true);
+    link.href = filename; 
+    link.setAttribute('data-example-css', true); 
     head.appendChild(link);
 }
 
