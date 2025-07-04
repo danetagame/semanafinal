@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* Estilos para a navegação dos botões */
+.button-navigation {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+.button-navigation button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Contêiner principal onde os exemplos serão carregados */
+#app-container {
+    width: 90%;
+    max-width: 1000px; /* Limite de largura para o conteúdo do exemplo */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 400px; /* Altura mínima para o contêiner */
+    display: flex; /* Para centralizar o texto inicial */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#app-container p {
+    font-size: 1.2em;
+    color: #666;
+}
