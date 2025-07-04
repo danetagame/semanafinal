@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Listas</title>
+  <link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+  <h1>Listas de Frutas</h1>
+
+  <input type="text" id="frutaInput" placeholder="Digite uma fruta" />
+  <button onclick="adicionarFruta()">Adicionar</button>
+
+  <h2>Frutas:</h2>
+  <p id="listaFrutas">[ ]</p>
+
+  <div class="botoes">
+    <button onclick="metodo('push')">Push (Adicionar ao final)</button>
+    <button onclick="metodo('pop')">Pop (Remover do final)</button>
+    <button onclick="metodo('shift')">Shift (Remover do início)</button>
+    <button onclick="metodo('unshift')">Unshift (Adicionar ao início)</button>
+    <button onclick="verificarBanana()">Includes('banana')</button>
+    <button onclick="mostrarIndex('uva')">IndexOf('uva')</button>
+    <button onclick="mostrarJoin()">Join(', ')</button>
+    <button onclick="mostrarSlice()">Slice(1, 3)</button>
+    <button onclick="fazerSplice()">Splice(1, 1)</button>
+    <button onclick="mapMaiusculas()">Map (MAIÚSCULAS)</button>
+    <button onclick="filtrarGrandes()">Filter (nome > 4 letras)</button>
+  </div>
+
+  <pre id="saida"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
