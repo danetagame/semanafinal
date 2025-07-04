@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    min-height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+.container_conteudo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.container_informacoes {
+    flex: 1;
+    padding: 3rem;
+}
+
+.container_botao {
+    background: #1875E8;
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: white; 
+}
+
+.container_texto {
+    margin: 16px 0;
+}
+
+.container__texto-azul {
+    color: #1875E8;
+}
+
+.container_input {
+    width: 100%;
+    height: 72px;
+    background-color: #FFF;
+    color: #1875E8;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container_botoes {
+    display: flex;
+    gap: 2em;
+}
+
+h1 {
+    font-size: 72px;
+    padding-bottom: 3rem;
+}
+
+.texto_paragrafo {
+    font-size: 32px;
+    font-weight: 400;
+}
