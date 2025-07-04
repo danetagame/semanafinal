@@ -94,7 +94,7 @@ window.carregarJogoNumeroSecreto = function() {
                         <button onclick="verificarChute()" class="container__botao">Chutar</button>
                         <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
                     </div>
-                    <img src="img/pessoaolhando.png" alt="Pessoa olhando" class="container__imagem-pessoa" />
+                    <img src="pessoaolhando.png" alt="Pessoa olhando" class="container__imagem-pessoa" />
                 </div>
                 </div>
         </div>
