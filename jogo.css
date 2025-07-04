@@ -60,3 +60,8 @@ h1 {
     font-size: 32px;
     font-weight: 400;
 }
+
+.container__imagem-pessoa {
+   max-width: 200px; /* Exemplo de ajuste de largura */
+   height: auto;
+}
