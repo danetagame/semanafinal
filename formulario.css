@@ -1,0 +1,42 @@
+#app-container {
+    background-color: #f2f2f2; /* Fundo do contêiner para o tema do formulário */
+    color: #333;
+    text-align: center;
+}
+
+#app-container h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#formulario {
+  display: inline-block;
+  background-color: white;
+  padding: 25px
+  max-width: 400px;
+  width: 100%;
+  text-align: left; 
+}
+
+#formulario label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#formulario input {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#formulario button {
+  width: 100%;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
