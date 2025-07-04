@@ -1,59 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplos de Aplicações Web</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      background-color: #f0f0f0;
-      margin: 0;
-    }
-    h1 {
-      color: #333;
-      margin-bottom: 30px;
-    }
-    .button-container button {
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 18px;
-      cursor: pointer;
-      border: none;
-      border-radius: 8px;
-      background-color: #007bff;
-      color: white;
-    }
-    .button-container button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos Front-end</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
 </head>
 <body>
-  <h1>Selecione um Exemplo</h1>
-  <div class="button-container">
-    <button onclick="irParaJogoNumeroSecreto()">Jogo do Número Secreto</button>
-    <button onclick="irParaExemploListas()">Exemplo de Listas</button>
-    <button onclick="irParaExemploFormulario()">Formulário</button>
-  </div>
+    <header>
+        <h1>Meus Exemplos Dinâmicos</h1>
+    </header>
 
-  <script>
-    function irParaJogoNumeroSecreto() {
-      window.location.href = 'jogo_numero_secreto.html';
-    }
+    <nav class="button-navigation">
+        <button onclick="carregarJogoNumeroSecreto()">Jogo do Número Secreto</button>
+        <button onclick="carregarExemploListas()">Exemplo de Listas</button>
+        <button onclick="carregarFormulario()">Formulário</button>
+    </nav>
 
-    function irParaExemploListas() {
-      window.location.href = 'exemplo_listas.html';
-    }
+    <main id="app-container">
+        <p>Selecione um dos exemplos acima para começar.</p>
+    </main>
 
-    function irParaExemploFormulario() {
-      window.location.href = 'exemplo_formulario.html';
-    }
-  </script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
