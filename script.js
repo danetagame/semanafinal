@@ -1,32 +1,31 @@
-//Jogo de Adivinhação
+// Função 1: Jogo de Adivinhação
 function executarJogoAdivinhacao() {
     document.querySelector('h1').innerHTML = 'Bem-vindo!';
     document.querySelector('p').innerHTML = 'Clique em um botão abaixo';
 
-    alert('Seja bem-vindo ao nosso jogo!');
+    alert('Seja bem-vindo ao nosso jogo!'); //
 
     let numeroSecreto = 5;
     
-    let chute;
-    let tentativas = 0;
+    let chute; 
+    let tentativas = 0; 
 
-    while (chute != numeroSecreto) {
-        chute = parseInt(prompt('Escolha um número entre 1 e 10'));
-        tentativas++;
+    while (chute != numeroSecreto) { 
+        chute = parseInt(prompt('Escolha um número entre 1 e 10')); 
+        tentativas++; 
 
-        if (chute == numeroSecreto) {
-            alert(`Parabéns! Você acertou o número secreto ${numeroSecreto} na tentativa ${tentativas}.`);
-        } else if (chute > numeroSecreto) {
+        if (chute == numeroSecreto) { 
+            alert(`Parabéns! Você acertou o número secreto ${numeroSecreto} na tentativa ${tentativas}.`); 
+        } else if (chute > numeroSecreto) { //
             alert(`O número secreto é menor que ${chute}. Tente novamente.`);
-        } else {
+        } else { //
             alert(`O número secreto é maior que ${chute}. Tente novamente.`);
         }
     }
 }
 
-//Calcular Média
+// Função 2: Calcular Média
 function calcularMediaNumeros() {
-    // Restaurar título e parágrafo principal
     document.querySelector('h1').innerHTML = 'Bem-vindo!';
     document.querySelector('p').innerHTML = 'Clique em um botão abaixo';
 
@@ -35,6 +34,7 @@ function calcularMediaNumeros() {
     let quantidade = prompt("Quantos números você quer digitar?");
     quantidade = Number(quantidade);
 
+    // Validação de entrada
     if (quantidade <= 0 || quantidade === null || quantidade === "" || typeof quantidade !== "number" || isNaN(quantidade)) {
         alert("Quantidade inválida. Tente novamente com um número maior que zero.");
     } else {
@@ -42,31 +42,31 @@ function calcularMediaNumeros() {
 
         for (let i = 1; i <= quantidade; i++) {
             let entrada = prompt(`Digite o ${i}º número:`);
-            let numero = Number(entrada);
+            let numero = Number(entrada); //
 
             if (entrada.trim() === "" || entrada === null || isNaN(numero)) {
                 alert("Valor inválido. Digite um número.");
-                i--; // repetir a rodada
-                continue;
+                i--;
+                continue; //
             }
 
-            soma += numero;
+            soma += numero; //
         }
 
-        let media = soma / quantidade;
+        let media = soma / quantidade; //
 
-        alert(`A média calculada entre os ${quantidade} números digitados é: ${media.toFixed(2)}`);
+        alert(`A média calculada entre os ${quantidade} números digitados é: ${media.toFixed(2)}`); //
     }
 }
 
-//Jogo de Soma
+// Função 3: Jogo de Soma
 function executarJogoDeSoma() {
-    let titulo = document.querySelector('h1'); 
+    let titulo = document.querySelector('h1');
     if (titulo) {
-        titulo.innerHTML = 'Jogo do número secreto'; 
+        titulo.innerHTML = 'Jogo do número secreto';
     }
     
-    let conteudo = document.querySelector('p'); 
+    let conteudo = document.querySelector('p');
     if (conteudo) {
         conteudo.innerHTML = 'Vamos jogar para esquentar!';
     }
