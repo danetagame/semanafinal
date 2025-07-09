@@ -1,7 +1,7 @@
 //Jogo de Adivinhação
 function executarJogoAdivinhacao() {
-    document.querySelector('h1').innerHTML = 'Bem-vindo aos Projetos Simples JS!';
-    document.querySelector('p').innerHTML = 'Clique em um botão abaixo para executar um dos exemplos.';
+    document.querySelector('h1').innerHTML = 'Bem-vindo!';
+    document.querySelector('p').innerHTML = 'Clique em um botão abaixo';
 
     alert('Seja bem-vindo ao nosso jogo!');
     
