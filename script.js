@@ -59,7 +59,6 @@ function calcularMediaNumeros() {
 
 //Jogo de Soma
 function executarJogoDeSoma() {
-    // Modifica os elementos h1 e p da página principal
     if (titulo) {
         titulo.innerHTML = 'Jogo do número secreto';
     }
