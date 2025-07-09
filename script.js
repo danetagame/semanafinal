@@ -4,6 +4,8 @@ function executarJogoAdivinhacao() {
     document.querySelector('p').innerHTML = 'Clique em um botão abaixo';
 
     alert('Seja bem-vindo ao nosso jogo!');
+
+    let numeroSecreto = 5;
     
     let chute;
     let tentativas = 0;
