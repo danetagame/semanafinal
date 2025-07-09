@@ -63,10 +63,10 @@ function calcularMediaNumeros() {
 function executarJogoDeSoma() {
     let titulo = document.querySelector('h1'); 
     if (titulo) {
-        titulo.innerHTML = 'Jogo do número secreto';
+        titulo.innerHTML = 'Jogo do número secreto'; 
     }
     
-    let conteudo = document.querySelector('p');
+    let conteudo = document.querySelector('p'); 
     if (conteudo) {
         conteudo.innerHTML = 'Vamos jogar para esquentar!';
     }
