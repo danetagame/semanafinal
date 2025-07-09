@@ -3,25 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Front-end</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
-</head>
+    <title>Projeto</title>
+    </head>
 <body>
-    <header>
-        <h1>Projeto Final</h1>
-    </header>
+    <h1 id="titulo">Meus Projetos</h1>
+    <p id="paragrafo">Clique em um botão abaixo para executar.</p>
 
-    <nav class="button-navigation">
-        <button onclick="carregarJogoNumeroSecreto()">Jogo do Número Secreto</button>
-        <button onclick="carregarExemploListas()">Lista</button>
-        <button onclick="carregarFormulario()">Formulário</button>
-    </nav>
+    <div>
+        <button onclick="executarJogoAdivinhacao()">Jogo de Adivinhação</button>
+        <button onclick="calcularMediaNumeros()">Calcular Média</button>
+        <button onclick="executarJogoDeSoma()">Jogo de Soma</button>
+    </div>
 
-    <main id="app-container">
-        <p>Selecione um dos exemplos acima para começar.</p>
-    </main>
-
-    <script src="js/script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
